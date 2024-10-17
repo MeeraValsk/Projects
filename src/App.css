@@ -2,37 +2,117 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.bg-container{
+  height: 100vh;
+  width:100%;
+}
+.login-card{
+  height:320px;
+ width:300px;
+ padding-top: 40px;
+ 
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width:500px)  {
+
+  .login-card{
+    width:450px;
+  }
+  
+}
+
+@media screen  and (max-width:767px){
+  .login-card{
+    
+  }
+  .u{
+    width:100% !important;
+  }
+  
+}
+
+.p-button:focus {
+  outline: none; /* Removes default outline */
+  
+  box-shadow: none; /* Remove box shadow */
+}
+
+.forget-card{
+  height:300px;
+  width:300px;
+  max-width:450px;
+  padding:15px 14px;
+  
+}
+
+
+
+
+
+
+
+
+/* Optional: Add custom focus state -p-input field of primereact */
+
+
+.p-inputtext:enabled:hover{
+
+
+
+}
+
+.p-inputtext:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  /* box shadow last color is used to change when we focus on focus on input field.or also when we hover also we need to change border-color*/
+  box-shadow: 0 0 0 0.2rem rgb(191, 191, 209); 
+  /* border:solid var(--primary-color); */
+}
+
+/* it is used to change when we focus on input field  bo*/
+
+
+.change-password{
+  height:380px;
+  width:400px;
+
+}
+
+
+
+.p-sidebar-custom {
+  width: 30%; /* Default width  of side bar*/
+}
+
+
+@media screen and (min-width:767px) and (max-width:991){
+  .p-sidebar-custom {
+    width: 60%; /* Default width  of side bar*/
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.custom-table .p-datatable-tbody > tr > td {
+  padding: 5px 14px; /* Adjust padding to reduce height */
+}
+
+.custom-table .p-datatable-tbody > tr {
+  height: 15px; /* Adjust row height */
+}
+
+/* .header{
+  position: fixed;
+  top:0px;
+} */
+
+
+
+.over{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -5,9 +5,68 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  /* height: 100%; */
+ 
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* .header, .footer {
+  flex-shrink: 0; /* Prevent header/footer from shrinking */
+*/
+
+.children {
+  
+  /* Enable vertical scroll */
+  
+  padding: 20px; /* Optional padding */
+  background-color: #f9f9f9; /* Optional for visibility */
+}
+
+/* Custom scrollbar styling for WebKit browsers (Chrome, Safari) */
+.children::-webkit-scrollbar {
+  width:7px; /* Width of the scrollbar */
+  height: 5px;
+
+
+}
+
+
+
+
+
+
+
+.children::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background of the scrollbar track */
+  border-radius: 10px;
+  scrollbar-width: thin;
+}
+
+.children::-webkit-scrollbar-thumb {
+  
+  border-radius: 10px; /* Rounded corners for the thumb */
+  scrollbar-width: thin
+}
+
+.children::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovered */
+  scrollbar-width: thin
+}
+
+
+.over{
+  display: flex;
+  flex-direction: column;
 }
